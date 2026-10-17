@@ -171,6 +171,8 @@ nav li a{display:block;padding:13px 0}
 form{grid-template-columns:1fr}
 }
 @media(max-width:480px){.sgrid,.values,.strip .wrap{grid-template-columns:1fr}.strip div{border-right:0!important;border-bottom:2px solid rgba(6,27,63,.2)}.plate{padding:18px}.top a{margin-left:12px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.skip{position:absolute;left:-999px;top:0;background:var(--gold);color:var(--navy);padding:10px 16px;z-index:100;font-weight:700}.skip:focus{left:0}
 </style>
 </head>
 <body>
