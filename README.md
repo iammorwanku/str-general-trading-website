@@ -36,3 +36,12 @@ images/           Share image, favicons and logo source files
 5. Open the domain and refresh with Ctrl+F5.
 
 The site is designed and hosted by [ReloHost](https://www.relohost.com).
+
+## How the enquiry form works
+
+1. Required fields are validated in the browser.
+2. A formatted message is built from the visitor's details.
+3. WhatsApp opens via `https://wa.me/27635494078` with the message URL-encoded.
+4. The visitor reviews the message and presses **Send in WhatsApp**.
+
+The page never says "Enquiry Sent": the enquiry is only complete once the visitor presses Send in WhatsApp.
