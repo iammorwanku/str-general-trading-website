@@ -56,3 +56,10 @@ The page never says "Enquiry Sent": the enquiry is only complete once the visito
 - [ ] Submit `https://strprojects.co.za/sitemap.xml` in Google Search Console
 - [ ] Create a Google Business Profile
 - [ ] Add a street address to the structured data if one is available
+
+## Customise
+
+- **Domain:** replace `https://strprojects.co.za` in `index.html`, `robots.txt` and `sitemap.xml`.
+- **Colours:** edit the CSS variables at the top of the `<style>` block in `index.html`.
+- **WhatsApp number:** search for `27635494078` in `index.html`.
+- **Services:** the cards and the form dropdown are plain HTML in `index.html`.
