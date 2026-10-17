@@ -350,6 +350,23 @@ if(el.id==="phone")ok=/^\+?[\d\s()-]{9,}$/.test(val)&&val.replace(/\D/g,"").leng
 el.parentNode.classList.toggle("bad",!ok);return ok;
 }
 form.querySelectorAll("[required]").forEach(function(el){el.addEventListener("input",function(){if(el.parentNode.classList.contains("bad"))v(el)})});
+form.addEventListener("submit",function(e){
+e.preventDefault();
+var all=true,first=null;
+form.querySelectorAll("[required]").forEach(function(el){if(!v(el)){all=false;if(!first)first=el}});
+if(!all){st.className="status show";st.textContent="Please complete the highlighted fields, then send again.";first.focus();return}
+var f=form.elements,c=f.company.value.trim();
+var m="*New website enquiry - STR General Trading and Projects*\n\n"+
+"*Name:* "+f.name.value.trim()+"\n"+
+(c?"*Company:* "+c+"\n":"")+
+"*Email:* "+f.email.value.trim()+"\n"+
+"*Contact number:* "+f.phone.value.trim()+"\n"+
+"*Service required:* "+f.service.value+"\n"+
+"*Subject:* "+f.subject.value.trim()+"\n\n"+
+"*Message:*\n"+f.message.value.trim();
+var url="https://wa.me/27635494078?text="+encodeURIComponent(m);
+window.open(url,"_blank","noopener");
+});
 })();
 </script>
 </body>
