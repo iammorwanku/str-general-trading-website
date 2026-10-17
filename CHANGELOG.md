@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.0.0 - 2026-10-17
 
 - Corporate one-page website with construction look based on the STR logo
 - WhatsApp enquiry form (no backend)
