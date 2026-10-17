@@ -304,6 +304,20 @@ form{grid-template-columns:1fr}
 <a href="tel:+27635494078">+27 63 549 4078</a>
 <a class="btn wa" href="https://wa.me/27635494078" target="_blank" rel="noopener">Chat on WhatsApp</a>
 </aside>
+<div id="enquiry" class="formbox">
+<form id="enq" novalidate>
+<div class="f"><label for="name">Full name</label><input id="name" name="name" autocomplete="name" required><span class="err">Enter your full name.</span></div>
+<div class="f"><label for="company">Company name <i>(optional)</i></label><input id="company" name="company" autocomplete="organization"></div>
+<div class="f"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required><span class="err">Enter a valid email address.</span></div>
+<div class="f"><label for="phone">Contact number</label><input id="phone" name="phone" type="tel" autocomplete="tel" required><span class="err">Enter a valid contact number.</span></div>
+<div class="f full"><label for="service">Service required</label><select id="service" name="service" required><option value="">Select a service</option><option value="Construction and Civil Engineering">Construction and Civil Engineering</option><option value="Catering and Hospitality Services">Catering and Hospitality Services</option><option value="Agriculture and Farming">Agriculture and Farming</option><option value="General Trading and Procurement">General Trading and Procurement</option><option value="Cleaning and Hygiene Services">Cleaning and Hygiene Services</option><option value="Landscaping and Environmental Services">Landscaping and Environmental Services</option><option value="Transport and Logistics">Transport and Logistics</option><option value="Property and Facilities Maintenance">Property and Facilities Maintenance</option><option value="Information Technology and Office Solutions">Information Technology and Office Solutions</option><option value="Events and Project Support">Events and Project Support</option><option value="Manufacturing and Industrial Supplies">Manufacturing and Industrial Supplies</option><option value="Mining and Industrial Support Services">Mining and Industrial Support Services</option></select><span class="err">Select a service.</span></div>
+<div class="f full"><label for="subject">Subject</label><input id="subject" name="subject" required><span class="err">Enter a subject.</span></div>
+<div class="f full"><label for="message">Message / project description</label><textarea id="message" name="message" required></textarea><span class="err">Describe your enquiry or project.</span></div>
+<div class="fbtn"><button class="btn" type="submit">Send Enquiry</button></div>
+<p class="note">Clicking Send Enquiry opens WhatsApp with your message ready. Press Send in WhatsApp to complete your enquiry.</p>
+<div class="status" id="status" role="status" aria-live="polite"></div>
+</form>
+</div>
 </div>
 </div>
 </section>
