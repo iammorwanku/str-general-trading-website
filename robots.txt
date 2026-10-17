@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://strprojects.co.za/sitemap.xml
