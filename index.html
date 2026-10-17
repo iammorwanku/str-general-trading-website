@@ -125,6 +125,24 @@ nav .btn:hover{color:var(--gold)}
 .info .btn{margin-top:24px;text-align:center;display:block;padding:15px}
 .info .btn.wa{background:var(--wa);border-color:var(--wa);color:var(--white)}
 .info .btn.wa:hover{background:transparent;color:var(--white);border-color:var(--white)}
+.formbox{background:var(--white);padding:40px;border-top:6px solid var(--gold)}
+form{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.f{display:flex;flex-direction:column;gap:7px}
+.f.full{grid-column:1/-1}
+label{font:700 1.05rem var(--cond);letter-spacing:.06em;text-transform:uppercase;color:var(--navy)}
+label i{font-style:normal;font-weight:500;color:var(--mute);text-transform:none;letter-spacing:0;font-family:var(--sans);font-size:.85rem}
+input,select,textarea{font:inherit;font-size:1rem;padding:14px 15px;border:2px solid #aeb9c7;background:var(--white);width:100%;color:var(--ink)}
+input:focus,select:focus,textarea:focus{border-color:var(--navy);outline:3px solid rgba(224,164,23,.5)}
+textarea{min-height:150px;resize:vertical}
+.err{color:#b3261e;font-size:.85rem;display:none}
+.f.bad .err{display:block}
+.f.bad input,.f.bad select,.f.bad textarea{border-color:#b3261e}
+.fbtn{grid-column:1/-1}
+.fbtn .btn{width:100%;background:var(--navy);border-color:var(--navy);color:var(--white);font-size:1.3rem;padding:17px}
+.fbtn .btn:hover{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.note{grid-column:1/-1;font-size:.9rem;color:var(--mute)}
+.status{grid-column:1/-1;padding:16px 18px;background:#fff4d6;border-left:8px solid var(--gold);display:none;font-size:.95rem}
+.status.show{display:block}
 </style>
 </head>
 <body>
