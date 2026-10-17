@@ -156,6 +156,21 @@ footer .credit a{color:var(--gold);font-weight:600}
 .fab:hover{background:#178a45}
 .fab svg{width:34px;height:34px;fill:var(--white)}
 @media(max-width:1000px){.sgrid{grid-template-columns:repeat(3,1fr)}.hero .wrap,.about,.contact .cols{grid-template-columns:1fr;gap:48px}.plate{max-width:520px}.strip .wrap{grid-template-columns:1fr 1fr}.strip div:nth-child(2){border-right:0}.strip div:nth-child(-n+2){border-bottom:2px solid rgba(6,27,63,.2)}}
+@media(max-width:780px){
+section{padding:68px 0}.hero{padding:64px 0 140px}.sky{height:120px}
+.menu{display:block}.logo img{height:54px}.bar{height:72px}
+.top .wrap>span:first-child{display:none}.top .wrap{justify-content:center}.top a:first-child{margin-left:0}
+nav{position:absolute;left:0;right:0;top:100%;background:var(--white);display:none;border-bottom:4px solid var(--gold)}
+nav.open{display:block}
+nav ul{flex-direction:column;align-items:stretch;gap:0;padding:6px 22px 22px}
+nav li a{display:block;padding:13px 0}
+.sgrid{grid-template-columns:repeat(2,1fr)}
+.pair{grid-template-columns:1fr}.panel{padding:48px 28px 36px}
+.values{grid-template-columns:1fr 1fr}
+.formbox{padding:26px 20px}
+form{grid-template-columns:1fr}
+}
+@media(max-width:480px){.sgrid,.values,.strip .wrap{grid-template-columns:1fr}.strip div{border-right:0!important;border-bottom:2px solid rgba(6,27,63,.2)}.plate{padding:18px}.top a{margin-left:12px}}
 </style>
 </head>
 <body>
