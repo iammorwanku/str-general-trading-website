@@ -38,6 +38,19 @@
 --haz:repeating-linear-gradient(-45deg,#e0a417 0 18px,#061b3f 18px 36px);
 --grid:linear-gradient(rgba(255,255,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.055) 1px,transparent 1px);
 --cond:"Barlow Condensed","Arial Narrow",Impact,sans-serif;--sans:"Barlow","Segoe UI",Arial,sans-serif}
+*{box-sizing:border-box;margin:0;border-radius:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font:400 1.05rem/1.7 var(--sans);color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+h1,h2,h3{font-family:var(--cond);font-weight:800;line-height:1;text-transform:uppercase;letter-spacing:.015em;color:var(--navy)}
+.wrap{width:min(1200px,100% - 44px);margin-inline:auto}
+section{padding:100px 0}
+h2{font-size:clamp(2.4rem,5vw,3.8rem);margin-bottom:18px;padding-left:20px;border-left:10px solid var(--gold)}
+.center h2{display:inline-block;text-align:left}
+.lead{max-width:60ch;color:var(--mute);font-size:1.1rem}
+.center .lead{margin-inline:auto}
 </style>
 </head>
 <body>
