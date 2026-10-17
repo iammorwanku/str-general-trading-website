@@ -336,5 +336,13 @@ form{grid-template-columns:1fr}
 
 <a class="fab" href="https://wa.me/27635494078?text=Hello%20STR%20General%20Trading%20and%20Projects%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp"><svg aria-hidden="true"><use href="#wa"/></svg></a>
 
+<script>
+(function(){
+document.getElementById("yr").textContent=new Date().getFullYear();
+var nav=document.getElementById("nav"),mb=document.querySelector(".menu");
+mb.addEventListener("click",function(){var o=nav.classList.toggle("open");mb.setAttribute("aria-expanded",o)});
+nav.addEventListener("click",function(e){if(e.target.tagName==="A"){nav.classList.remove("open");mb.setAttribute("aria-expanded","false")}});
+})();
+</script>
 </body>
 </html>
