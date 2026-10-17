@@ -342,6 +342,14 @@ document.getElementById("yr").textContent=new Date().getFullYear();
 var nav=document.getElementById("nav"),mb=document.querySelector(".menu");
 mb.addEventListener("click",function(){var o=nav.classList.toggle("open");mb.setAttribute("aria-expanded",o)});
 nav.addEventListener("click",function(e){if(e.target.tagName==="A"){nav.classList.remove("open");mb.setAttribute("aria-expanded","false")}});
+var form=document.getElementById("enq"),st=document.getElementById("status");
+function v(el){
+var val=el.value.trim(),ok=!!val;
+if(el.id==="email")ok=/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(val);
+if(el.id==="phone")ok=/^\+?[\d\s()-]{9,}$/.test(val)&&val.replace(/\D/g,"").length>=9;
+el.parentNode.classList.toggle("bad",!ok);return ok;
+}
+form.querySelectorAll("[required]").forEach(function(el){el.addEventListener("input",function(){if(el.parentNode.classList.contains("bad"))v(el)})});
 })();
 </script>
 </body>
