@@ -366,6 +366,8 @@ var m="*New website enquiry - STR General Trading and Projects*\n\n"+
 "*Message:*\n"+f.message.value.trim();
 var url="https://wa.me/27635494078?text="+encodeURIComponent(m);
 window.open(url,"_blank","noopener");
+st.className="status show";
+st.innerHTML="WhatsApp is opening with your enquiry. <strong>Your enquiry is not sent until you press Send in WhatsApp.</strong> If WhatsApp did not open, <a href=\""+url+"\" target=\"_blank\" rel=\"noopener\">open it here</a>.";
 });
 })();
 </script>
