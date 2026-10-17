@@ -26,3 +26,13 @@ sitemap.xml       Sitemap for search engines
 favicon.ico       Browser icon
 images/           Share image, favicons and logo source files
 ```
+
+## Deploy to ReloHost (cPanel)
+
+1. Make sure an SSL certificate is active for the domain (AutoSSL in cPanel).
+2. Open **File Manager** and go to `public_html`.
+3. Upload the project files (`index.html`, `404.html`, `robots.txt`, `sitemap.xml`, `.htaccess`, `favicon.ico` and the `images` folder).
+4. Turn on "Show hidden files" to see `.htaccess`.
+5. Open the domain and refresh with Ctrl+F5.
+
+The site is designed and hosted by [ReloHost](https://www.relohost.com).
