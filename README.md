@@ -45,3 +45,14 @@ The site is designed and hosted by [ReloHost](https://www.relohost.com).
 4. The visitor reviews the message and presses **Send in WhatsApp**.
 
 The page never says "Enquiry Sent": the enquiry is only complete once the visitor presses Send in WhatsApp.
+
+## SEO checklist
+
+- [x] One `h1`, semantic landmarks and descriptive alt text
+- [x] Title, meta description and canonical link
+- [x] Open Graph and Twitter card tags with a 1200x630 share image
+- [x] JSON-LD business data listing all 12 services
+- [x] `sitemap.xml` and `robots.txt`
+- [ ] Submit `https://strprojects.co.za/sitemap.xml` in Google Search Console
+- [ ] Create a Google Business Profile
+- [ ] Add a street address to the structured data if one is available
