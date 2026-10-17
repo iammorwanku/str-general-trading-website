@@ -63,3 +63,8 @@ The page never says "Enquiry Sent": the enquiry is only complete once the visito
 - **Colours:** edit the CSS variables at the top of the `<style>` block in `index.html`.
 - **WhatsApp number:** search for `27635494078` in `index.html`.
 - **Services:** the cards and the form dropdown are plain HTML in `index.html`.
+
+## GitHub Pages (optional preview)
+
+Push this repository to GitHub, then open **Settings > Pages**, choose the `main` branch and the root folder.
+The `.nojekyll` file stops GitHub from processing the site with Jekyll. Production hosting stays on ReloHost.
